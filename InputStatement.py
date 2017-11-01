@@ -6,5 +6,8 @@ radius = float(input())
 
 print("You have entered a radius of", radius)
 
+if(radius < 0):
+    print("The radius of a circle cannot be a negative number")
+
 myConstPi = 3.14
 print("The circle's circumference is :", 2*myConstPi*radius)
