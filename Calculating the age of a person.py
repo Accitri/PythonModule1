@@ -30,6 +30,8 @@ if(age > 120):
 
 print("You are", age, "years old.")
 
+if(age == 0):
+
 
 
 
