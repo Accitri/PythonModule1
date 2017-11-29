@@ -52,6 +52,10 @@ if(age == 100):
 if(13 <= age <= 19):
     print("You are a teenager. Enjoy your youth - you won't have the chance to relive it.")
 
+decade = age % 10
+
+if(decade == 0):
+    print("Welcome into a new decade of your life!")
 
 #Sum of the digits of the person's birth year
 sum(map(int, str(3)))
