@@ -1,4 +1,6 @@
 
+import turtle
+
 #defining a function
 def celsiusToFahrenheit():
     myInput = int(input("Enter a temperature in celsius: "))
@@ -10,18 +12,40 @@ def fahrenheitToCelsius():
     tempInCelsius = int(((((myInput - 32)/9 * 5))))
     print(myInput,"degrees fahrenheit, equals", tempInCelsius, "degrees celsius.")
 
+
 #user inputs
-fahreheit = 1
-celsius = 2
+fahreheit = 'f'
+celsius = 'c'
 
-degreeType = int(input("Are you converting to fahrenheit (1) or celsius (2)? "))
-
-if (degreeType != 1,2):
-    print("That is not a valid option")
+degreeType = input("Are you converting to fahrenheit (f) or celsius (c)? ")
 
 #calling a function
-if (degreeType == 1):
+if (degreeType == 'f'):
     celsiusToFahrenheit()
+    myTurtle = turtle.Turtle
+    exit()
+    resultFahrenheit = celsiusToFahrenheit()
 
-if (degreeType == 2):
+
+elif (degreeType == 'c'):
     fahrenheitToCelsius()
+    myTurtle = turtle.Turtle()
+    exit()
+    resultCelsius = fahrenheitToCelsius()
+
+else:
+    print("That is not a valid option")
+
+#visual representation
+maxcounter = resultFahrenheit or resultCelsius
+counter = 0
+
+
+
+while (counter < maxcounter):
+    counter = counter + 1
+
+#test
+#if entered float - breaks
+
+
