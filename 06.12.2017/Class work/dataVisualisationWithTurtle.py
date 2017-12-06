@@ -11,7 +11,7 @@ def setupTurtle():
     myTurtleInsideFunction.setpos(-300, 0)
     myTurtleInsideFunction.pendown()
     myTurtleInsideFunction.color('red')
-    myTurtleInsideFunction.pensize(3)
+    myTurtleInsideFunction.pensize(1)
 
     return myTurtleInsideFunction
 
@@ -33,11 +33,11 @@ def drawGraphRectangle():
             myTurtle.color('red')
         myTurtle.forward(20)
         myTurtle.left(90)
-        myTurtle.forward(averageTemperatureList[i] * 20)
+        myTurtle.forward(averageTemperatureList[i] * 50)
         myTurtle.right(90)
         myTurtle.forward(20)
         myTurtle.right(90)
-        myTurtle.forward(averageTemperatureList[i] * 20)
+        myTurtle.forward(averageTemperatureList[i] * 50)
         myTurtle.left(90)
 
 
@@ -64,13 +64,22 @@ def pulse(height, width):
 #pulse()
 
 
-
-
-
-
 #calling the drawGraphRectangle function
 #to visualise averageTemperatureList
-drawGraphRectangle()
+#drawGraphRectangle()
+
+
+def drawGraphCircle():
+    for i in range(0, len(averageTemperatureList)):
+        if (averageTemperatureList[i] >= 0):
+            myTurtle.color('green')
+        if (averageTemperatureList[i] < 0):
+            myTurtle.color('red')
+        myTurtle.circle(averageTemperatureList[i] * 10)
+
+
+drawGraphCircle()
+
 
 
 turtle.done()
