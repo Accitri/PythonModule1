@@ -16,11 +16,9 @@ def setupTurtle():
 
     return myTurtleInsideFunction
 
-
 #calling the setupTurtle function and
 #store the result in a variable called myTurtle
 myTurtle = setupTurtle()
-
 
 #define the temperature list
 averageTemperatureList = [3, 5, 1, -4, -1, 4, 0, -5, -1, -3, 1, 4]
@@ -90,17 +88,17 @@ def drawRainGraphRectangle():
 #for temp in averageTemperatureList[i]:
     #pulse(temp, 25)
 
-drawRainGraphRectangle()
+#drawRainGraphRectangle()
 
 #calling the drawGraphRectangle function
 #to visualise averageTemperatureList
-drawTempGraphRectangle()
+#drawTempGraphRectangle()
 
 
 
 #pulse()
 
-#drawGraphCircle()
+drawGraphCircle()
 
 
 
