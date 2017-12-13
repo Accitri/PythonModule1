@@ -1,4 +1,5 @@
 
+
 myList = [1, 2, 3, 4, 5]
 
 #function that finds the sum of myList
@@ -7,4 +8,3 @@ def sumOfMyList():
 
 #calling a function
 sumOfMyList()
-
