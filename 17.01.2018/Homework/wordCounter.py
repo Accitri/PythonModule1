@@ -1,4 +1,5 @@
 
+myWord = input("What word do you want to count? ")
 
 def readMyDataFile(dataFileName):
     with open(dataFileName, mode = 'r') as myDataFile:
@@ -14,4 +15,4 @@ def wordCount(myList, word):
 
 #print(type(readMyDataFile('someText.txt')))
 
-print(wordCount(readMyDataFile('someText.txt'), "kan"))
+print(wordCount(readMyDataFile('someText.txt'), myWord))
