@@ -5,9 +5,10 @@
 def readMyDataFile(dataFileName):
     with open(dataFileName, mode = 'r') as myDataFile:
         items = myDataFile.read().splitlines()
+        print(items)
         return items
 
-#readMyDataFile()
+readMyDataFile("somedata.txt")
 
 #writing to a file
 
@@ -57,7 +58,7 @@ def checkPassword(userName):
                 print("The password for", userName, "is incorrect")
 
 
-checkPassword(input("Type your username"))
+#checkPassword(input("Type your username"))
 
 
 

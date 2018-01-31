@@ -6,7 +6,7 @@ def readMyDataFile(dataFileName):
         items = myDataFile.read().splitlines()
         return items
 
-def wordCount(myList, word):
+def wordCounter(myList, word):
     counter = 0
     for i in myList:
         if(i == word):
@@ -15,4 +15,4 @@ def wordCount(myList, word):
 
 #print(type(readMyDataFile('someText.txt')))
 
-print(wordCount(readMyDataFile('someText.txt'), myWord))
+print(wordCounter(readMyDataFile('someText.txt'), myWord))

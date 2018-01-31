@@ -8,3 +8,4 @@ def sumOfMyList():
 
 #calling a function
 sumOfMyList()
+
